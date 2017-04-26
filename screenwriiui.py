@@ -25,7 +25,7 @@ class screenwriiter_gui(QtGui.QMainWindow, Ui_MainWindow):
       self.compose_button.clicked.connect(self.compose)
 
   def load(self):
-    inf = open("txtsrc/save.txt", 'r')
+    inf = open("save/save.txt", 'r')
     entry = []
     store = False
     for line in inf:
