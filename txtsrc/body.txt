@@ -5,7 +5,7 @@ E;THE LIBRARY;DAY
 Student rush in and out of the library during finals week
 
 -->TRSN<--
-DISSOLVE:
+DISSoLVE:
 
 -->SLGL<--
 I;THE LIBRARY - 6TH FLOOR;DAY
@@ -17,7 +17,7 @@ ERIC;a 22 year old male with long blond hair sits at a table in the 6th floor of
 eriC;Hey what's up man?
 
 -->CHAR<--
-matt;another student with long brown hair walks up to the table 
+matt;another student with long brown hair walks up to the table
 
 -->DLOG<--
 MatT;Wanna go to the ARC? I have to print some things.

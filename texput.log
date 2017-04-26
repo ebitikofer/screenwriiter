@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.19)  25 APR 2017 23:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.19)  25 APR 2017 23:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -466,7 +466,7 @@ File: ot1qcr.fd 2009/09/25 v1.2 font definition file for OT1/qcr
 
 *~\\\setlength{\hsize}{6in}\setlength{\leftskip}{0in}
 
-*\noindent EXT. ALDEN LIBRARY - DAY\\
+*\noindent EXT. THE LIBRARY - DAY\\
 
 *
 
@@ -509,7 +509,7 @@ Overfull \hbox (144.54pt too wide) detected at line 0
 (Please type a command or say `\end')
 *~\\\setlength{\hsize}{6in}\setlength{\leftskip}{0in}
 
-*\noindent INT. ALDEN LIBRARY - 6TH FLOOR - DAY\\
+*\noindent INT. THE LIBRARY - 6TH FLOOR - DAY\\
 
 *
 
@@ -520,9 +520,15 @@ Underfull \hbox (badness 10000) detected at line 0
 (Please type a command or say `\end')
 *\setlength{\hsize}{6in}\setlength{\leftskip}{0in}
 
-*\noindent ERIC, 22 year old male, long blond hair\\
+*\noindent ERIC, a 22 year old male with long blond hair sits at a table in the
+ 6th floor of the library\\
 
 *
+
+Overfull \hbox (5.57982pt too wide) detected at line 0
+\OT1/qcr/m/n/12 ERIC, a 22 year old male with long blond hair sits at a ta-ble
+ []
+
 
 Underfull \hbox (badness 10000) detected at line 0
 
@@ -548,9 +554,15 @@ Underfull \hbox (badness 10000) detected at line 0
 (Please type a command or say `\end')
 *\setlength{\hsize}{6in}\setlength{\leftskip}{0in}
 
-*\noindent MATT, 33 year old white male with long brown hair\\
+*\noindent MATT, another student with long brown hair walks up to the table \\
 
 *
+
+Overfull \hbox (12.77982pt too wide) detected at line 0
+\OT1/qcr/m/n/12 MATT, an-other stu-dent with long brown hair walks up to the ta
+-
+ []
+
 
 Underfull \hbox (badness 10000) detected at line 0
 
@@ -598,13 +610,13 @@ Underfull \hbox (badness 10000) detected at line 0
 (Please type a command or say `\end')
 *\setlength{\hsize}{6in}\setlength{\leftskip}{0in}
 
-*\noindent KRERKKIAT, 20 year old male with medium length black hair stands fac
+*\noindent KRERKKIAT,  a third student with medium length black hair stands fac
 ing them\\
 
 *
 
-Overfull \hbox (27.17981pt too wide) detected at line 0
-\OT1/qcr/m/n/12 KRERKKIAT, 20 year old male with medium length black hair stand
+Overfull \hbox (19.97981pt too wide) detected at line 0
+\OT1/qcr/m/n/12 KRERKKIAT, a third stu-dent with medium length black hair stand
 s
  []
 
@@ -616,7 +628,7 @@ Underfull \hbox (badness 10000) detected at line 0
 (Please type a command or say `\end')
 *\setlength{\hsize}{6in}\setlength{\leftskip}{0in}
 
-*\noindent FACING KRERKKIAT:\\
+*\noindent FACING KRERKKIAT\\
 
 *
 
@@ -662,7 +674,7 @@ Underfull \hbox (badness 10000) detected at line 0
 Here is how much of TeX's memory you used:
  1481 strings out of 494953
  19700 string characters out of 6180977
- 75353 words of memory out of 5000000
+ 76353 words of memory out of 5000000
  4789 multiletter control sequences out of 15000+600000
  7386 words of font info for 17 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -671,7 +683,7 @@ Here is how much of TeX's memory you used:
 texmf/fonts/enc/dvips/tex-gyre/q-rm.enc}{/usr/share/texmf/fonts/enc/dvips/tex-g
 yre/q-rmm.enc}</usr/share/texmf/fonts/type1/public/tex-gyre/qbkr.pfb></usr/shar
 e/texmf/fonts/type1/public/tex-gyre/qcrr.pfb>
-Output written on texput.pdf (1 page, 43466 bytes).
+Output written on texput.pdf (1 page, 43179 bytes).
 PDF statistics:
  18 PDF objects out of 1000 (max. 8388607)
  12 compressed objects within 1 object stream

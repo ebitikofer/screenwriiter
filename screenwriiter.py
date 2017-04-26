@@ -1,50 +1,7 @@
 import sys
 import re
-from PyQt4 import QtCore, QtGui, uic
 
-qtCreatorFile = "gui/screenwriiter.ui" # Enter file here.
-
-entries = []
-selected = 0
-
-Ui_MainWindow, QtBaseClass = uic.loadUiType(qtCreatorFile)
-
-class screenwriiter_gui(QtGui.QMainWindow, Ui_MainWindow):
-
-  def __init__(self):
-      QtGui.QMainWindow.__init__(self)
-      Ui_MainWindow.__init__(self)
-      self.setupUi(self)
-      self.compose_button.clicked.connect(self.update)
-      self.plus_button.clicked.connect(self.add_block)
-      self.minus_button.clicked.connect(self.sub_block)
-      self.compose_button.clicked.connect(self.compose)
-
-  def update(self):
-    selected = 0
-    #update list
-
-  def add_block(self):
-    entry = []
-    #i = selected + 1 #or last if none selected maybr use insert into list
-    entry.append(str(self.type_box.currentText()))
-    entry.append(str(self.text_box.toPlainText()))
-    entries.insert(selected + 1, entry)
-    self.text_box.setPlainText("")
-
-  def sub_block(self):
-    entries.pop(selected)
-    #delete selected item
-    #remove and decrement remaining indices
-
-  def compose(self):
-    osfile = open("txtsrc/out.tex", 'w+')
-    make_env(osfile)
-    osfile.close()
-    #run make env on entries
-
-
-def make_env(outf):
+def make_env():
 
   inf = open("txtsrc/init.txt", 'r')
   vals = []
@@ -64,13 +21,13 @@ def make_env(outf):
   print(r'\begin{document}')
 
   print(r'{\fontfamily{qcr}\selectfont')
-  make_body(outf)
+  make_body()
   print(r'}')
   print(r'\end{document}')
 
   inf.close()
 
-def make_body(outf):
+def make_body():
 
   t12h = r'\setlength{\hsize}{6in}'
   t8h = r'\setlength{\hsize}{4in}'
@@ -195,8 +152,8 @@ def make_body(outf):
 
   inf.close()
 
+def main():
+    make_env()
+
 if __name__ == "__main__":
-    app = QtGui.QApplication(sys.argv)
-    window = screenwriiter_gui()
-    window.show()
-    sys.exit(app.exec_())
+    main()
