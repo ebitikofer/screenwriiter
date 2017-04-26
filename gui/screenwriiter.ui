@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>screenwriiter</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QToolButton" name="plus_button">
@@ -72,47 +72,47 @@
     </item>
     <item>
      <property name="text">
-      <string>Slugline</string>
+      <string>SLGL</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>Subheader</string>
+      <string>SUBH</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>Action</string>
+      <string>ACTN</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>Character</string>
+      <string>CHAR</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>Dialogue</string>
+      <string>DLOG</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>Parenthetical</string>
+      <string>PNTL</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>Extension</string>
+      <string>EXTN</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>Transition</string>
+      <string>TRSN</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>Shot</string>
+      <string>SHOT</string>
      </property>
     </item>
     <item>
@@ -144,13 +144,6 @@
      </rect>
     </property>
    </widget>
-   <zorder>plus_button</zorder>
-   <zorder>minus_button</zorder>
-   <zorder>compose_button</zorder>
-   <zorder>type_box</zorder>
-   <zorder>text_box</zorder>
-   <zorder>block_list</zorder>
-   <zorder>block_list</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

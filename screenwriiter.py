@@ -70,6 +70,7 @@ def make_body():
       vals.append(line[3:-4])
       store = True
       continue
+  inf.close()
 
   #bool auto_size
   #string length, width, s_title, img_name, img_l, img_w, scale

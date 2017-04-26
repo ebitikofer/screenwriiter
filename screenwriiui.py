@@ -2,6 +2,7 @@ import sys
 import subprocess
 import re
 from PyQt4 import QtCore, QtGui, uic
+import screenwriiter
 
 qtCreatorFile = "gui/screenwriiter.ui" # Enter file here.
 
@@ -16,13 +17,44 @@ class screenwriiter_gui(QtGui.QMainWindow, Ui_MainWindow):
       QtGui.QMainWindow.__init__(self)
       Ui_MainWindow.__init__(self)
       self.setupUi(self)
+      self.load()
+      self.block_list.currentItemChanged.connect(self.edit)
       self.compose_button.clicked.connect(self.update)
       self.plus_button.clicked.connect(self.add_block)
       self.minus_button.clicked.connect(self.sub_block)
       self.compose_button.clicked.connect(self.compose)
 
+  def load(self):
+    inf = open("txtsrc/save.txt", 'r')
+    entry = []
+    store = False
+    for line in inf:
+      if store is True:
+        entry.append(line[:-1])
+        entries.append(entry)
+        store = False
+        entry = []
+      elif line[0:3] == '-->':
+        entry.append(line[:-1])
+        store = True
+        continue
+    inf.close()
+    self.update()
+
   def update(self):
-    selected = 0
+    self.block_list.clear()
+    outf = open("txtsrc/body.txt", 'w')
+    for entry in entries:
+      item = QtGui.QListWidgetItem(entry[0][3:-3])
+      self.block_list.addItem(item)
+      outf.write(entry[0] + "\n")
+      outf.write(entry[1] + "\n")
+      outf.write("\n")
+    outf.close()
+    #update list
+
+  def edit(self):
+    self.text_box.setPlainText(entries[self.block_list.currentRow()][1])
     #update list
 
   def add_block(self):
@@ -30,16 +62,13 @@ class screenwriiter_gui(QtGui.QMainWindow, Ui_MainWindow):
     #i = selected + 1 #or last if none selected maybr use insert into list
     entry.append(str(self.type_box.currentText()))
     entry.append(str(self.text_box.toPlainText()))
-    entries.insert(selected + 1, entry)
+    entries.insert(self.block_list.currentRow(), entry)
     self.text_box.setPlainText("TEXT")
-    item = QtGui.QListWidgetItem(self.type_box.currentText())
-    self.block_list.insertItem(self.block_list.currentRow(), item)
+    self.update()
 
   def sub_block(self):
     entries.pop(self.block_list.currentRow())
-    self.block_list.takeItem(self.block_list.currentRow())
-    #delete selected item
-    #remove and decrement remaining indices
+    self.update()
 
   def compose(self):
     with open('out.tex', 'w') as f:

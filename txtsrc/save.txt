@@ -1,0 +1,41 @@
+-->SLGL<--
+E;THE LIBRARY;DAY
+
+-->ACTN<--
+Student rush in and out of the library during finals week
+
+-->TRSN<--
+DISSoLVE:
+
+-->SLGL<--
+I;THE LIBRARY - 6TH FLOOR;DAY
+
+-->CHAR<--
+ERIC;a 22 year old male with long blond hair sits at a table in the 6th floor of the library
+
+-->DLOG<--
+eriC;Hey what's up man?
+
+-->CHAR<--
+matt;another student with long brown hair walks up to the table
+
+-->DLOG<--
+MatT;Wanna go to the ARC? I have to print some things.
+
+-->DLOG<--
+ErIC;For sure man.
+
+-->CHAR<--
+Krerkkiat; a third student with medium length black hair stands facing them
+
+-->SHOT<--
+FACING KRERKKIAT
+
+-->PNTL<--
+to Krerkkiat
+
+-->EXTN<--
+O.S.
+
+-->DLOG<--
+ERIC;See ya later buddy!
