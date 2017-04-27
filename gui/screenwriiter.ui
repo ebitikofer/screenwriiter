@@ -134,7 +134,7 @@
      <string>TEXT</string>
     </property>
    </widget>
-   <widget class="QListWidget" name="block_list">
+   <widget class="QListWidget" name="blocks">
     <property name="geometry">
      <rect>
       <x>380</x>
@@ -158,46 +158,40 @@
     <property name="title">
      <string>&amp;File</string>
     </property>
-    <addaction name="action_open"/>
+    <addaction name="action_New"/>
     <addaction name="separator"/>
-    <addaction name="action_Save"/>
-    <addaction name="action_Recent_2"/>
+    <addaction name="action_Open"/>
     <addaction name="separator"/>
-    <addaction name="action_Recent"/>
     <addaction name="action_Save_as"/>
-   </widget>
-   <widget class="QMenu" name="menuEdit">
-    <property name="title">
-     <string>&amp;Edit</string>
-    </property>
-    <addaction name="actionPreferences"/>
    </widget>
    <widget class="QMenu" name="menu_Help">
     <property name="title">
      <string>&amp;Help</string>
     </property>
+    <addaction name="actionAbout"/>
+    <addaction name="separator"/>
+    <addaction name="actionDocumentation"/>
    </widget>
    <addaction name="menu_File"/>
-   <addaction name="menuEdit"/>
    <addaction name="menu_Help"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
-  <action name="action_open">
+  <action name="action_New">
    <property name="text">
     <string>&amp;New</string>
    </property>
   </action>
-  <action name="action_Save">
+  <action name="action_Open">
    <property name="text">
     <string>&amp;Open</string>
    </property>
   </action>
-  <action name="action_Recent">
+  <action name="action_Save">
    <property name="text">
     <string>&amp;Save</string>
    </property>
   </action>
-  <action name="action_Recent_2">
+  <action name="action_Recent">
    <property name="text">
     <string>&amp;Recent</string>
    </property>
@@ -210,6 +204,16 @@
   <action name="action_Save_as">
    <property name="text">
     <string>&amp;Save as..</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About..</string>
+   </property>
+  </action>
+  <action name="actionDocumentation">
+   <property name="text">
+    <string>Documentation..</string>
    </property>
   </action>
  </widget>
