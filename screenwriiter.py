@@ -151,8 +151,6 @@ def make_body():
       print()
       sc += 1
 
-  inf.close()
-
 def main():
     make_env()
 

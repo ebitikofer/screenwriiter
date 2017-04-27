@@ -66,6 +66,8 @@ class screenwriiter_gui(QtGui.QMainWindow, Ui_MainWindow):
 
   def edit(self):
     self.text_box.setPlainText(self.entries[self.blocks.currentRow()][1])
+    #text = QtGui.QPlainTextEdit(entry[0][3:-3])
+    #self.blocks.addItem(item)
     #update list
 
   def add(self):
