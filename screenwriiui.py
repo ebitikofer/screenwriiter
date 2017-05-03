@@ -2,7 +2,7 @@ import sys
 import subprocess
 import re
 from PyQt4 import QtCore, QtGui, uic
-import pythonpoppler
+import popplerqt4
 import screenwriiter
 
 qtCreatorFile = "gui/screenwriiter.ui" # Enter file here.
