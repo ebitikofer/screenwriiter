@@ -4,7 +4,7 @@
 * produces a formatted screenplay
 
 HOW TO USE:
-* run 'make install' in home directory
+* run 'make install' in home directory (just installs python3 and python-qt4 if you dont have them)
 * run 'make' or 'python3 screenwriiui.py' in home directory
 * File>New - make new doc
 * File>Open - opens ./save/save.txt

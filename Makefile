@@ -10,7 +10,9 @@ run:
 
 install:
 	sudo apt-get install python3
-	sudo apt-get install python-qt4
+	sudo apt-get install python3-pyqt4
+	sudo apt-get install python3-poppler-qt4
+	sudo apt-get install texlive
 
 clean:
 	$(DEL) $(ETE)

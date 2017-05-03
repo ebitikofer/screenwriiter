@@ -2,6 +2,7 @@ import sys
 import subprocess
 import re
 from PyQt4 import QtCore, QtGui, uic
+import pythonpoppler
 import screenwriiter
 
 qtCreatorFile = "gui/screenwriiter.ui" # Enter file here.
@@ -88,6 +89,7 @@ class screenwriiter_gui(QtGui.QMainWindow, Ui_MainWindow):
     with open('out.tex', 'w') as f:
         subprocess.call(['python3', 'screenwriiter.py'], stdout=f)
     subprocess.run(['pdflatex', 'out.tex'])
+    d = popplerqt4.Poppler.Document.load('out.pdf')
 
 
 if __name__ == "__main__":
